@@ -1,8 +1,8 @@
 body {
     font-family: Helvetica;
     text-align: center;
-    color: white
-    background-color #333;
+    color: white;
+    background-color: #05022c;
     padding: 0;
     margin: 0;
 }
@@ -26,8 +26,8 @@ ul li {
 }
 
 ul li a {
-    color: #fff;
-    text-decoration:none;
+    color: #f1f1f3;
+    text-decoration: none;
     transition: 0.5s;
 
 }
@@ -37,7 +37,7 @@ h1 {
 }
 
 img {
-    border: 3px solid rgb( 15,194,218);
+    border: 3px solid rgb(255, 255, 255);
     height: 300px;
 }
 
