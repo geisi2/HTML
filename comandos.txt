@@ -1,0 +1,132 @@
+https://www.w3schools.com/tags --- tags em html em ordem 
+https://pixabay.com/pt/  --- site para imagens gratuitas
+https://icons8.com.br/icons/set/favicon --- logotipos de tamanho reduzido gratuitos
+
+
+                        ENTENDENDO O  CSS
+
+-Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.
+-Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.
+-/* comentarios em css */
+-Para selecionar um elemento com um ID específico, escreva um caractere de hash (#), seguido pelo ID do elemento.
+Nunca comece o nome de um ID um número!
+-Para selecionar elementos com uma classe específica, escreva um caractere de ponto (.), Seguido pelo nome da classe.
+-O seletor universal (*) asterisco seleciona todos os elementos HTML na página
+-Para agrupar seletores, separe cada seletor com uma vírgula.
+-Propriedades
+  
+        color: cor da letra;
+  
+        text-aling: alinhamento do texto.Valores permitidos:
+                    center, left, right,justify
+  
+        text-decoration: é usada para definir ou remover decorações do texto.
+                none; é frequentemente usado para remover sublinhados dos links.
+
+        background-color: cor de fundo de um elemento.Valores permitidos:
+                        um nome de cor válido 
+                        um valor HEX 
+                        um valor RGB 
+       
+        background-image: uma imagem como plano de fundo de um elemento;
+                        contain -(imagem de fundo será dimensionada e tentará ajustar-se à área de conteúdo.)
+
+       
+        background-repeat: sem repetição da imagem de plano de fundo.Valores permitidos:
+                          no-repeat; apenas uma vez
+                          repeat-x; repetir a imagem apenas horizontalmente
+                          repeat-y; repetir uma imagem verticalmente
+
+        background-position: usada para especificar a posição da imagem de fundo.
+       
+        background-attachment: especifica se a imagem de plano de fundo deve rolar ou ser corrigida (não rolará com o restante da página).Valores permitidos:
+                               fixed; não rolará com o restante da página
+                               scroll; fundo deve rolar com o restante da página 
+       
+        opacity: especifica a (opacidade / transparência) de um elemento. Pode assumir um valor de 0,0 até 1,0. Quanto menor o valor, mais transparente fica.
+       
+        border-style: especifica que tipo de borda a ser exibida. Valores permitidos:
+                        dotted - Define uma borda pontilhada 
+                        dashed - Define uma borda tracejada 
+                        solid - Define uma borda sólida 
+                        double - Define uma borda dupla 
+                        groove- Define uma borda ranhurada em 3D. O efeito depende do valor da cor da borda 
+                        ridge- Define uma borda sulcada em 3D. O efeito depende do valor da cor da borda
+                        inset- Define uma borda inserida em 3D. O efeito depende do valor da cor da borda 
+                        outset- Define uma borda inicial 3D. O efeito depende do valor da cor da borda 
+                        none - Define sem borda 
+                        hidden - Define uma borda oculta
+       
+        border-width:  especifica a largura das quatro bordas  pode ser definida como um tamanho específico 
+                       (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: fino, médio ou grosso
+                        pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).    
+                        
+        border-color: é usada para definir a cor das quatro bordas. A cor pode ser definida por: 
+                        nome - especifique um nome de cor, como "azul"
+                        HEX - especifique um valor HEX, como "# ff0000"
+                        RGB - especifique um valor RGB, como "rgb (255,0,0)"
+                        HSL - especifique um valor HSL, como "hsl (0, 100%, 50%)"
+                        transparente
+            OBS:Se a propriedade border-color não estiver definida, ele herdará a cor do elemento.
+                border-color pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda). 
+
+        border-radius: é usada para adicionar bordas arredondadas a um elemento.
+
+        Tanto o margin(margem) quanto o padding(preenchimento) são propriedades usadas para criar espaço em torno dos elementos, fora ou dentro de qualquer borda definida.    
+                (margin ou padding)-top: referente ao topo 
+                (margin ou padding)-right: referente a direita
+                (margin ou padding)-bottom: referente a parte inferior
+                (margin ou padding)-left: referente a esquerda
+             Todas as propriedades da margem e preenchimento podem ter os seguintes valores:
+                auto - o navegador calcula a margem
+                length - especifica uma margem em px, pt, cm etc.
+                % - especifica uma margem em porcentagem da largura do elemento que contém
+                inherit - especifica que a margem deve ser herdada do elemento pai
+
+        box-sizing: faz com que o elemento mantenha sua largura; se você aumentar o preenchimento, o espaço de conteúdo disponível diminuirá.
+-A largura total de um elemento deve ser calculada assim:
+    Largura total do elemento = largura + preenchimento esquerdo + preenchimento direito + borda esquerda + borda direita + margem esquerda + margem direita
+-A altura total de um elemento deve ser calculada assim:
+    Altura total do elemento = altura + preenchimento superior + preenchimento inferior + borda superior + borda inferior + margem superior + margem inferior
+- O modelo de caixa CSS é essencialmente uma caixa que envolve todos os elementos HTML. 
+    Consiste em: margens, bordas, preenchimento e o conteúdo real.
+
+        As propriedades height e width são usadas para definir a altura e a largura de um elemento. O height e o width podem ter os seguintes valores:
+                auto- Isso é o padrão. O navegador calcula a altura e a largura 
+                length - Define a altura / largura em px, cm etc. 
+                % - Define a altura / largura em porcentagem do bloco que contém 
+                initial - Define a altura / largura como seu valor padrão 
+                inherit - A altura / largura será herdada do seu valor pai
+
+        O max-width é usada para definir a largura máxima de um elementopropriedade max-width substitui width.
+
+Fontes : 
+-família genérica - um grupo de famílias de fontes com aparência semelhante (como "Serif" ou "Monospace")
+-família de fontes - uma família de fontes específica (como "Times New Roman" ou "Arial")
+           font-family: é a família da fonte de um texto.
+
+        Font-family deve conter vários nomes de fontes como um sistema de "fallback"(Quando algo é utilizado para substituir a opção original que não está disponível ). 
+        Se o navegador não suportar a primeira fonte, ele tenta a próxima fonte e assim por diante. Comece com a fonte desejada e termine com uma família genérica.
+        São o 3 tipos de fontes: 
+                                font serif
+                                font monospace
+                                font sans-serif
+
+        font-style é usada principalmente para especificar texto em itálico.
+        Esta propriedade possui três valores:
+                normal - o texto é mostrado normalmente
+                italic - o texto é mostrado em itálico
+                oblique - o texto está "inclinado" (oblíquo é muito semelhante ao itálico, mas menos suportado)
+        
+        font-weight especifica o peso de uma fonte
+                normal
+                bold - negrito 
+
+       font-variant especifica se um texto deve ou não ser exibido em uma fonte com letras maiúsculas. No entanto, as letras
+       maiúsculas convertidas aparecem em um tamanho de fonte menor que as letras maiúsculas originais no texto.
+                    normal 
+                    small-caps 
+        
+        font-size define o tamanho do texto.
+            Sempre utilize as tags HTML apropriadas, como <h1> até <h6> para títulos e <p> para parágrafos.
+

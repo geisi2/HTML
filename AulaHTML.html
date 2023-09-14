@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Aula sobre HTML</title>
-    <link rel="stylesheet" href="css/stylesHTML.css">
+    <link rel="reset" href="css/reset.css"> <!--“resetar” as estilizações padrões que as tags html carregam antes de colocar o link para o seu CSS propriamente -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!-- é o Bootstrap, ele combina CSS e JavaScript para estilizar os elementos de uma página HTML. proporciona interatividade na página, pois oferece uma série de componentes que facilitam a comunicação com o usuário, como menus de navegação, controles de paginação, barras de progresso e muito mais.
+    ignifica que as páginas são desenvolvidas para funcionar em desktops, tablets e smartphones, de uma forma simples e bem organizada.-->
+    <link rel="stylesheet" href="css/stylesHTML.css"> 
+    <link rel="icon" href="https://img.icons8.com/?size=1x&id=82279&format=png" sizes="200x200" type="image/png"> <!-- favicons:logotipos de tamanho reduzido e ficam na aba do navegador -->
 </head>
 <body>
     <h1>Aula sobre <a href="AulaHTML.html">HTML</a></h1>
@@ -15,33 +20,47 @@
     <h4>Título 4</h4>
     <h5>Título 5</h5>
     <h6>Título 6</h6>
-
-    <blockquote cite= "http: // developer.mozzilla.org">
+    <span>Hello</span><!--Um elemento em linha não inicia em uma nova 
+        linha e ocupa apenas a largura necessária.-->
+    
+    <blockquote cite= "http://developer.mozzilla.org">
         <p>"Esta é uma citação tirada de Mozilla Developer Center." </p>
 
     </blockquote>
    
-    <blockquote> 
-        <p>"Esta é uma citação de um arquivo interessante."
-            Veja a fonte <a ref="www.exemplo.com/artigo.html"> Aqui </a></p>
+    <blockquote> <!--citação de bloco; indica que o texto incluído é uma longa citação.-->
+        <p>"Esta é uma citação de um arquivo interessante."Veja a fonte
+            <a href="https://www.google.com.br">AQUI</a> 
+        </p>
 
     </blockquote>
 
-    <div id = "div-paragrafos">
+    <div id = "div-paragrafos"> <!--atributo id usado para apontar para uma declaração de estilo 
+        específica em uma folha de estilos(CSS).Sintaxe:escreva um caractere de hash (#), seguido por um nome de id
+        Nota: O nome do ID faz distinção entre maiúsculas e minúsculas!
+        Nota: O nome do ID deve conter pelo menos um caractere e não deve conter espaços em branco.-->
         <p> Exemplo de parágrafo </p>
-        <p> Esse é outro exemplo de parágrafo </p>
+        <p> Esse é outro exemplo <span>SPAN TESTE</span> de parágrafo </p>
         <p> Esse tem uma palavra em <b>negrito</b> </p>
 
     </div>
 
-    <div>
-    <p class = "longo "> Esse é um parágrafo longo <br>
+    <div><!--Um elemento no nível de bloco sempre inicia em uma nova 
+            linha e ocupa toda a largura disponível, ou seja, O elemento div é 
+             um elemento no nível do bloco, usado como um contêiner
+             (ou um conjunto) para outros elementos HTML. -->
+    <p class = "longo "> Esse é um parágrafo longo <br> 
+        <!--atributo class é usado para especificar
+        uma classe para um elemento HTMLpara acessar e manipular elementos com o nome de classe específico.
+        Vários elementos HTML podem compartilhar a mesma classe.
+    -->
             com varias linhas <br>
             outra linha <br>
             outra linha 
     </p>
 
-    <p class = "longo "> Outro parágrafo longo <br>
+    <p class = "longo "> Outro parágrafo longo <br> 
+        <!--A tag <br> do HTML é usada para definir uma quebra de linha.-->
                 São varias linhas de texto para exemplificar  <br>
                 o uso do estilo aplicado à classe. 
      </p>
@@ -55,26 +74,180 @@
     <p> <em> Parágrafo em itálico </em></p>
 
     <hr>
-    <ol>
+    <ol><!--Lista ordenada, marcados com numeros, mas pode escolher o timo de marcador:
+        Tipo	Descrição
+        type="1"	A lista será numerada com números (Padrão)
+        type="A"	A lista será organizada com o alfabeto em maiúsculo
+        type="a"	A lista será organizada com o alfabeto em manúsculo
+        type="I"	A lista será organizada com letras romanas em maiúsculo
+        type="i"	A lista será organizada com letras romanas em manúsculo
+        -->
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
-    </ol>
+    </ol> <!--Nesse caso vai ser o padrao-->
 
-    <ul>
-        <li>item A</li>
+    <ul><!--Lista não ordenada, marcados com pequenos círculos pretos -->
+        <li>item A</li><!-- item -->
         <li>item B</li>
         <li>item C</li>
     </ul>
-
+    <dl> <!--lista de descrição (lista de termos, com uma descrição de cada termo)-->
+        <dt>cafe </dt><!--define o nome que vai ter sua descrição abaixo -->
+        <dd>bebida </dd><!--descreve cada nome-->
+        <dt>biscoito</dt><!--define o nome que vai ter sua descrição abaixo -->
+        <dd>comida</dd><!--descreve cada nome-->
+    </dl>
+<!--pode criar uma lista dentro de outra lista. -->
     <div>
         <h2><p>Abre o Google em outra aba</p>
-        <a href="https:// www.google.com"> Acesse o google aqui </a>
+        <a href="https://www.google.com.br"> Acesse o google aqui </a>
         </h2>
 
     </div>
 <!-- Imagem-->
     <img src="https://files.tecnoblog.net/wp-content/uploads/2014/10/html5.jpg" alt="Logo HTML5">
 
+    <table> <!--Define uma tabela cabeçario em linha -->
+        <caption> <b>Tabela cabeçario em linhas </caption> <!--Título/legenda da tabela-->
+
+            <tr><!--linha da tabela-->
+                <th>Nome</th> <!--cabeçalho da tabela-->
+                <th colspan="2"> Sobrenome</t><!-- cabeçalho da tabela com o 
+                atributo colspan utiliza mais de uma celula-->
+                <th>Idade</th><!--cabeçalho da tabela-->
+            </tr>
+            <tr><!--linha da tabela-->
+                <td>Geisiane</td> <!--celula da tabela -->
+                <td> Silva </td> <!--celula da tabela-->
+                <td> Jeronimo </td> <!--celula da tabela-->
+                <td>20</td> <!--celula da tabela-->
+            </tr>
+    </table>
+
+    <table> <!--Define uma tabela cabeçario em coluna -->
+        <caption> <b>Tabela cabeçario em colunas</caption><!--Título/legenda da tabela-->
+        <tr><!--linha da tabela-->
+            <th>Nome </th><!--cabeçalho da tabela-->
+            <td>Geisiane</td><!--celula da tabela-->
+        </tr>
+        <tr><!--linha da tabela-->
+            <th rowspan="2"> Sobrenome</th><!--cabeçalho da tabela-->
+            <td>Silva</td><!--celula da tabela-->
+        </tr>
+        <tr><!--linha da tabela-->
+            <td>Jeronimo</td><!--celula da tabela-->
+        </tr>
+        <tr><!--linha da tabela-->
+            <th>Idade</th><!--cabeçalho da tabela-->
+            <td>20</td><!--celula da tabela-->
+        </tr>
+       
+    </table> 
+
+    <form action="AulaHTML.html"> <!-- é usado para coletar dados de entrada de um usuário, ou seja,  para criar um formulário -->
+        <fieldset><!-- usado para agrupar dados relacionados em um formulário.-->
+        <legend>Dados Pessoais:</legend> <!--define uma legenda para o elemento <fieldset>.-->
+        <label for="nome">Primeiro Nome:</label><br><!-- <label>define um rótulo para vários elementos.-->
+        <input type="text" id="nome" name="nome"><br> <!--Exibe um campo de entrada de texto de uma única linha-->
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" id="sobrenome" name="sobrenome"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset">
+         </fieldset>
+
+        </form>
+        <form action="AulaHTML.html" target="_self" > <!--atributo action define a ação a ser executada quando o formulário é enviado.
+        O atributo target especifica se o resultado enviado será aberto em uma nova guia do navegador, em um quadro ou na janela atual.
+        O valor padrão é "_self", o que significa que o formulário será enviado na janela atual.-->
+           
+            <!--<input type="radio"> define um botão de opção .Os botões de opção permitem que o usuário selecione UMA dentre um número limitado de opções.-->
+            <input type="radio" id="masculino" name="genero" value="m">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="f">
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label>        
+        </form>
+
+            <label for="carros">Escolha um carro:</label>
+            <select id="carros" name="carros">  <!-- define uma lista suspensa :-->
+            <option value="Uno">Uno</option>
+            <option value="Gol">Gol</option>
+            <option value="Fusca">Fusca</option>
+            <!--Os elementos <option> definem uma opção que pode ser selecionada.
+                Por padrão, o primeiro item da lista suspensa é selecionado.
+                Para definir uma opção pré-selecionada, adicione o atributo selected à opção:
+                <option value="fiat" selected>Fiat</option>-->
+            </select>
+              
+            <form> <!--input type="checkbox"> define uma caixa de seleção .
+                As caixas de seleção permitem que o usuário escolha entre não selecionar nenhuma opção ou várias opções dentre o número limitado de opções.-->
+                <legend>Você possui quais dos veículos?</legend>  
+                <input type="checkbox" id="veiculo1" name="veiculo1" value="Bicicleta">
+                <label for="veiculo1"> Bicicleta</label><br>
+                <input type="checkbox" id="veiculo2" name="veiculo2" value="Carro">
+                <label for="veiculo2"> Carro</label><br>
+                <input type="checkbox" id="veiculo3" name="veiculo3" value="Moto">
+                <label for="veiculo3"> Moto</label>
+              </form>
+
+            <textarea name="menssagem" rows="10" cols="30"> Digite sua sugestão
+                </textarea>
+            <!--O elemento <textarea>  define um campo de entrada com várias linhas (uma área de texto):-->
+            <!--O atributo roas especifica o número visível de linhas em uma área de texto.
+                O atributo cols especifica a largura visível de uma área de texto.-->
+
+                <button type="button" onclick="alert('Olá!')">Clique Aqui</button>
+                    <!--O elemento <button> define um botão que o usuário pode clicar-->
+                 
+
 </body>
 </html>
+<!-- Tipos de formatação: 
+
+                    <b> - Texto em negrito
+
+                    <strong> - texto importante
+
+                    <i> - texto em itálico
+
+                    <em> - Texto enfatizado
+
+                    <mark> - Texto marcado
+
+                    <small> - Texto menor
+
+                    <del> - Texto excluído
+
+                    <ins> - texto inserido
+
+                    <sub> - Texto subscrito
+
+                    <sup> - Texto sobrescrito  -->
+<!--
+    Tipos de entrada que você pode usar em HTML para formularios:
+<input type="button"> 
+<input type="checkbox">
+<input type="color"> 
+<input type="date"> 
+<input type="datetime-local"> 
+<input type="email">
+<input type="file"> 
+<input type="hidden">
+<input type="image">
+<input type="month"> 
+<input type="number"> 
+<input type="password">  senhas 
+<input type="radio"> 
+<input type="range">
+<input type="reset"> 
+<input type="search">
+<input type="submit"> 
+<input type="tel"> 
+<input type="text"> 
+<input type="time">
+<input type="url"> 
+<input type="week">
+
+-->

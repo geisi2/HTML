@@ -1,6 +1,8 @@
 /* Geral*/
 body{
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: aliceblue;
 }
 /* estilos aplicados nos elementos dentro da div-paragrafos */
 
@@ -9,8 +11,12 @@ body{
     background-color: rgb(93, 93, 145);
 } 
 
-/* estilos aplicados para a classe .longo */
-.longo {
+span{
+    color:red;
+    background-color: white;
+}
+/*estilos aplicados para a classe .longo  */
+.longo { /*sintaxe da classe:.(seguido de um nome da classe){propriedades CSS } */
     background-color: rgb(129, 31, 48);
     color: aliceblue;
 }
@@ -29,3 +35,43 @@ p{
 h1{
     background-color: aqua;
 }
+/* estilos aplicados para h1 */
+table, td {
+    background-color: rgb(14, 58, 219);
+    color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 35px;
+    padding: 33px;
+    text-align: center;
+
+  }
+  th{
+    background-color:white;
+    color:rgb(14, 58, 219);
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 35px;
+    padding: 33px;
+    text-align: center;
+
+  }
+  caption{
+
+    color: rgb(14, 58, 219);
+    border: 5px solid black;
+    border-collapse: separate;
+    font-size: 33px;
+    padding: 33px;
+    text-align: center
+  }
+
+  ul,li, dl,dt, dd {
+    background-color:pink;
+    margin-right: 2px;
+    color:rgb(0, 0, 0);
+    padding: 33px;
+    text-align: center;
+    border: 5px solid black;
+  
+ }

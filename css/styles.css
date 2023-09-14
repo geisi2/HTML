@@ -1,3 +1,16 @@
+/*O CSS pode ser adicionado aos documentos HTML de três maneiras:
+Inline - usando o atributo style  dentro dos elementos HTML(usado para aplicar um estilo exclusivo a um único elemento no HTML)
+Interno - usando um elemento <style> na seção <head> do documento HTML(usado para definir um estilo para uma única página HTML.)
+Externo - usando um elemento <link> para vincular a um arquivo CSS externo(usada para definir o estilo para muitas páginas HTML.)
+Esse é o css externo:
+
+Adiciona o link desse arquivo na seção <head> de cada página HTML a ser usado esses estilos.
+Mas lembre-se esse arquivo não deve conter nenhum código HTML e deve ser salvo com uma extensão .css.
+
+Por que é melhor ? Porque com uma folha de estilos externa, você pode alterar a aparência de um site inteiro, 
+alterando apenas um arquivo!*/
+
+/* abre o bloco que quer de tal estilo e o fecha */
 body {
     font-family: Helvetica;
     text-align: center;
@@ -23,10 +36,15 @@ nav ul {
 
 ul li {
    margin-right: 12px;
+
 }
 
 ul li a {
     color: #f1f1f3;
+    /*Cor HEXADECIMAL, especificada como #RRGGBB, RR(vermelho), GG(verde) e BB(azul).
+    São números inteiros hexadecimais entre 00 e FF, especificando a intensidade da
+    cor.Ex: #0000FF é exibido como azul, porque o componente azul é definido como seu
+    valor mais alto (FF) e os outros são definidos como 00.*/
     text-decoration: none;
     transition: 0.5s;
 
@@ -38,7 +56,17 @@ h1 {
 
 img {
     border: 3px solid rgb(255, 255, 255);
-    height: 300px;
+    
+
+/*rgb: indica uma cor obtida com a mistura de uma quantidade
+ de cor vermelha com verde e azul.Existem duas maneiras de definir
+a quantidade de cada uma das três cores:Uma faixa de números de 0 até 255
+ou uma faixa de porcentagens de 0% até 100%. Mas, não é válido usar
+ em uma definição de cor uma mistura de números e porcentagens.
+ E tambem tem a maneira estendida da função rgb, o rgba, na qual um quarto argumento 
+define a opacidade da cor. Este quarto argumento é um número decimal na faixa de 0 até 1.*/
+max-width: 50%;
+height: auto; /* tamanho da imagem */
 }
 
 footer {
@@ -46,3 +74,15 @@ footer {
     border-top: 1px solid #666 ;
     margin-top: 20px;
 }
+
+/* HSL 
+ outro tipo de cor é o HSL (hue, saturation, lightness) permite que você
+declare as cores com uso de três parâmetros:tom,saturação e luminosidade.
+O valor do tom  é um número que representa a medida de um ângulo (expresso em graus)
+apontando para um tom da cor na roda de cores. O valor da luminosidade é expresso
+em porcentagem. Um valor igual a 100% resulta em cor branca e 0 em cor preta,
+sendo 50% o valor normal.
+A sintaxe geral para a declaração com uso dessa função seria:hsl(120, 75%, 50%)
+ E tambem tem a maneira estendida da função hsl, o hsla, na qual um quarto argumento 
+define a opacidade da cor. Este quarto argumento é um número decimal na faixa de 0 até 1.
+*/

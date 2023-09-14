@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> <!--Define que este documento é um documento HTML.
+    Importante para o navegador de internet entender de forma correta
+   todas as tags do documento.  -->
+
+<html lang="pt-br"> <!--<html>:Elemento raiz de uma página HTML. Toda estrutura em 
+    HTML deve possuir essa tag iniciando e terminando o código. 
+    o atributo lang: erve para ajudar os mecanismos de busca a direcionar melhor
+    as pesquisas e traduzir as páginas web automaticamente para os usuários.
+    O código do país também podem ser adicionados ao código do idioma no atributo lang. 
+    Portanto, os dois primeiros caracteres definem o idioma da página HTML e os dois 
+    últimos caracteres definem o país. -->
+<head> <!--Elemento que contém meta informações sobre a página HTML. Meta informações 
+    ou Metadados, que são dados sobre outros dados.-->
+    <meta charset="UTF-8"> <!-- especifica qual a codificação de caracteres para o documento HTML:
+    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao HTML</title>
-    <link rel ="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--método para permitir que os web designers assumam o controle sobre a janela de exibição-->
+    <title>Introdução ao HTML</title> <!--Especifica um título para a página HTML,na barra
+         de título do navegador ou na guia da página-->
+     <link rel ="stylesheet" href="css/styles.css"><!--link do css externo -->
 
 </head>
-<body>
+<body><!--Define o corpo do documento.É aqui que fica toda a parte visível do site
+     para o usuário.-->
     <nav>
-        <h2>Mini Projeto</h2>
-        <ul>
+        <h2>Mini Projeto</h2> <!--O elemento <h(1 a 6 )> define cabeçalhos e seus respectivos tamanhos-->
+        <ul> <!--LIsta na horizontal, montada no css-->
             <li><a href="AulaHTML.html">HTML</a></li>
             <li><a href="AulaCSS.html">CSS</a></li>
             <li><a href="AulaJS.html">JavaScript</a></li>
@@ -20,13 +33,33 @@
     
     <section>
         <h1>Seja Bem Vindo ao Mini Projeto </h1>
-        <p> Este projeto é uma introdução ao HTML, CSS e JavaScript</p>
-        <a href="Aula.HTML.html">
-            <img src="img/fundo.jpg" alt="">
+        <p> Este projeto é uma introdução ao HTML, CSS e JavaScript</p> <!-- define um parágrafo.-->
+        <a href="Aula.HTML.html"> <!-- a  tag <a> define um hiperlink O atributo <href> especifica 
+            o URL(Endereço) da página para a qual o link vai
+            -->
+            <img src="img/fundo.jpg" alt=""><!--A tag<img> é usada para inserir uma imagem em uma página HTML. 
+                O atributo src (source - traduzindo:buscar) especifica o caminho onde a imagem esta salva para
+                 que ela seja exibida. O atributo alt é um texto alternativo para uma imagem, se a imagem, 
+                 por algum motivo, não puder ser exibida.
+                 podendo tambem definir o tamanho da imagem aqui como <img src="imagem.jpg" width(largura)="500" height(altura)="295"> -->
+
+                 <!-- Também aceita gifs animados!!-->
         </a>
     </section>
-    <footer>
-        Geisi &copy; 2023
+    <footer> <!--usada para colocar um rodapé em seu site-->
+        <p>Geisi &copy; 2023</p> <!-- <p>= Paragrafos-->
     </footer>
 </body>
 </html>
+
+<!--As tags HTML não diferenciam maiúsculas de minúsculas.Mas como boa prática 
+    de programação, vamos manter todas as tags em minúsculas-->
+
+<!--  Abreviação   Formato do Arquivo	                     Extensão do Arquivo
+          APNG	    Animated Portable Network Graphics  	        .apng
+          GIF	    Graphics Interchange Format                 	.gif
+          ICO	    Microsoft Icon                             	.ico, .cur
+          JPEG	    Joint Photographic Expert Group image	 .jpg, .jpeg, .jfif, .pjpeg, .pjp
+          PNG	    Portable Network Graphics	                    .png
+          SVG	    Scalable Vector Graphics                        .svg
+-->
