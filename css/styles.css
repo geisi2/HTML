@@ -40,7 +40,7 @@ ul li {
 }
 
 ul li a {
-    color: #f1f1f3;
+    color: #fff;
     /*Cor HEXADECIMAL, especificada como #RRGGBB, RR(vermelho), GG(verde) e BB(azul).
     São números inteiros hexadecimais entre 00 e FF, especificando a intensidade da
     cor.Ex: #0000FF é exibido como azul, porque o componente azul é definido como seu
@@ -48,6 +48,10 @@ ul li a {
     text-decoration: none;
     transition: 0.5s;
 
+}
+/* mudar a transisção de cor pro site  */ 
+ul li a:hover {
+color: rgb(15,89,150)
 }
 
 h1 {
